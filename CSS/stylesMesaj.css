@@ -1,0 +1,81 @@
+#cssload-wrapper {
+width: 625px;
+height: 63px;
+position: absolute;
+left: 50%;
+top: 50%;
+}
+#cssload-border {
+	border: 9px solid rgb(227,6,19);
+	height: 100%;
+	width: 100%;
+	position: relative;
+	left: -50%;
+	top: -50%;
+	padding: 13px 9px;
+}
+#cssload-whitespace {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+#cssload-line {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0,79,159);
+	animation: cssload-slide 6s steps(40) infinite;
+}
+@keyframes cssload-slide {
+	0% {
+		left: -100%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+#trimitere {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    font-size: 4vw;
+    color: rgb(0,79,159);
+}
+.check {
+  position: absolute;
+  left: 48.5%;
+  top: 40%;
+  transform: rotate(45deg);
+  height: 96px;
+  width: 48px;
+  border-bottom: 28px solid green;
+  border-right: 28px solid green;
+}
+#check {
+    text-align: center;
+}
+.wrong {
+    height: 100px;
+    width: 100px;
+    top: 44%;
+    left: 46.5%;
+    background-color: white;
+    position: absolute;
+}
+.wrong:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c";
+    font-size: 100px; 
+    color: rgb(227,6,19);
+    line-height: 100px;
+    text-align: center;
+}

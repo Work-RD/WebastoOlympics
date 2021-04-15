@@ -1,0 +1,85 @@
+﻿* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+.container {
+    padding: 5px;
+    border:solid 3px;
+    margin-top: 5px;
+}
+input[type=text], input[type=number] {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 1px 0;
+    display: inline-block;
+    border: none;
+    background: rgb(0,79,159);
+} 
+input[type=text]:focus, input[type=number]:focus {
+    background-color: rgb(227,6,19);
+    outline: none;
+}
+hr {
+    border: 1px solid ;
+    margin-bottom: 5px;
+} 
+::placeholder {
+    color: white;
+}
+.registerbtn {
+    background-color: green;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    color: white;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+a {
+    color: rgb(227,6,19);
+}
+#logoMic {
+    width: 60px;
+    height: 60px;
+    border: 0;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 1px 0;
+    display: inline-block;
+    border: none;
+    background: rgb(0,79,159);
+    color: white;
+}
+select:focus {
+    background-color: rgb(227,6,19);
+    outline: none;
+    color: white;
+    font-size: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(227,6,19); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0,79,159); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0,79,159); 
+}
+::-webkit-scrollbar-corner {
+  box-shadow: inset 0 0 5px rgb(227,6,19); 
+}

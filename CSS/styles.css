@@ -1,0 +1,647 @@
+﻿/* Body */
+body {
+  background-color: white;
+}
+/* Scroll down */
+html {
+  scroll-behavior: smooth;
+}
+/* Logo Webasto */
+h1 {
+  text-align: right;
+  color: rgb(0,79,159);
+  font-size: 3vw;
+}
+/* Titlu */
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(227,6,19); 
+}
+/* Informatii */
+h4 {
+  font-size: 30px;
+  color: rgb(0,79,159);
+}
+/* Tabel sporturi */
+table {
+  width: 100%;
+}
+/* Link vizitat */
+a:link, a:visited {
+  color: rgb(227,6,19);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+/* Link hover and active */
+a:hover, a:active {
+  color: rgb(0,79,159);
+  animation: shake 0.5s; 
+}
+/* Brake line horizontal */
+hr{
+  border: 1px solid rgb(227,6,19);
+}
+/* Place holder */
+::placeholder {
+  color: white;
+}
+/* Input text and password */
+input[type=text], input[type=password] {
+  color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(0,79,159);
+  box-sizing: border-box;
+  background-color: rgb(0,79,159);
+}
+/* Video prezentare */
+video
+{
+  max-width: 100%;
+  height: auto;
+}
+/* Logo Webasto */
+#logoMare {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+/* Logo titlu */
+#logoMediu {
+  width: 30px;
+  height: 30px;
+  border: 0;
+}
+/* Logo sporturi */
+#logoMic {
+  width: 23px;
+  height: 23px;
+  border: 0;
+}
+/* Countdown */
+#countdown {
+  position: relative;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  font-size: 2vw;
+  color: rgb(0,79,159);
+  font-family: "DS-DIGII.TTF";
+  animation: glow 1s linear infinite alternate;
+}
+/* Cauta button */
+#cauta {
+  background-color: transparent;
+  color: rgb(227,6,19);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 40px;
+}
+/* Cauta button hover */
+#cauta:hover {
+  color: rgb(0,79,159);
+  animation: shake 0.5s; 
+}
+/* Div Sporturi */
+.sporturi {
+  font-size: 30px;
+  text-align: center;
+}
+.sporturi2 {
+  display: none;
+}
+
+/* Logo Car */
+.logoCar{
+  animation: rotation 3s infinite linear;
+  position:absolute;
+  top:0;
+  padding-top:100px;
+}
+
+
+/* TAB */
+
+
+/* Tabul informatii */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(0,79,159);
+  background-color: rgb(0,79,159);
+}
+/* Button tab */
+.tab button {
+  background-color: rgb(0,79,159);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+/* Button tab hover */
+.tab button:hover {
+  background-color: rgb(227,6,19);
+}
+/* Button tab active */
+.tab button.active {
+  background-color: rgb(227,6,19);
+}
+/* Tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+/* Tab close */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+} 
+/* Tab close hover */
+.topright:hover {color: rgb(227,6,19);}
+
+
+/* MODAL */
+
+
+/* Register button conectare */
+.registerbtn {
+  background-color: green;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  color: white;
+}
+/* Cancel button conectare */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(227,6,19);
+  border: none;
+  color: white;
+}
+/* Logo modal conectare */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+/* Logo modal conectare */
+img.avatar {
+  width: 70%;
+}
+/* Container modal conectare */
+.container {
+  padding: 16px;
+}
+/* Modal conectare */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+/* Modal content conectare */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 30%;
+}
+/* Close button modal conectare */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* Close button hover and focus modal conectare */
+.close:hover, .close:focus {
+  color: rgb(227,6,19);
+  cursor: pointer;
+}
+/* Animate modal conectare */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+
+/* FLIP CARD */
+
+
+/* Flip card sporturi */
+.flip-card {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  perspective: 1000px;
+  margin: auto;
+}
+/* Continut flip card */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+/* Flip card hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Flip card fron and back */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+/* Flip card front */
+.flip-card-front {
+  background-color: inherit;
+  color: black;
+}
+/* Flip card back */
+.flip-card-back {
+  background-color: inherit;
+  color: blue;
+  transform: rotateY(180deg);
+}
+
+
+/* NAVIGATION BAR */
+
+
+/* Top navigation bar */
+.topnav{
+  position: relative;
+  overflow: hidden;
+}
+/* Top navigation left */
+.topnav-left {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+/* Top navigation right */
+.topnav-right {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* IFRAME */
+
+
+/* Google Map Router */
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:400px;
+  width:100%;
+}
+/* Google Map Canvas */
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:100%;
+}
+
+
+/* PIE CHART */
+
+
+/* Chart */
+#myChart {
+  width:100%;
+  height:100%;
+  min-height:250px;
+}
+/* Display Chart */
+.zc-ref {
+  display: none;
+}
+#myChart-license-text{
+  display : none;
+}
+
+
+/* Chat Mesaj */
+
+
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(0,79,159);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  position: relative;
+  right: -11px;
+  width: 280px;
+  float: right;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 8px;
+  z-index: 9;
+  border: solid 10px white;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(0,79,159);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+  resize: none;
+  min-height: 200px;
+}
+
+/* Full-width input */
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+}
+
+/* When the input gets focus, do something */
+.form-container input:focus {
+  background-color: whitesmoke;
+  outline: none;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: whitesmoke;
+  outline: none;
+}
+
+/* Placeholder chat */
+.form-container ::placeholder {
+  color: black;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 1;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(227,6,19);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+}
+
+
+/* Fireworks */
+
+
+/* Canvas fireworks */
+canvas {
+	display: block;
+}
+/* Modal fireworks */
+.firework {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: transparent;
+}
+/* Close button fireworks */
+.close-firework {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* Close button fireworks hover and focus */
+.close-firework:hover,
+.close-firework:focus {
+  color: rgb(227,6,19);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* H1 fireworks */
+.h1-fireworks {
+  font-family:Century;
+  color:white;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(227,6,19); 
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0,79,159); 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0,79,159); 
+}
+::-webkit-scrollbar-corner {
+  box-shadow: inset 0 0 5px rgb(227,6,19); 
+}
+
+/* Animate zoom modal conectare */
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Tab fade effect */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Logo Rotation */
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+/* Glow countdown */
+@keyframes glow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 1px 1px 3px rgb(227,6,19);
+  }
+}
+/* Shake titles */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* Font countdown */
+@font-face {
+  font-family: "DS-DIGII.TTF";
+  src: url(../Font/DS-DIGII.TTF);
+}
+
+/* Daca ecranul este mai mic de... */
+@media screen and (max-width: 1000px) {
+  /* Sporturi */
+  .sporturi {
+    display: none;
+  }
+  /* Sporturi pictograme */
+  .sporturi2 {
+    display: block;
+  }
+  /* Titlu */
+  h5 {
+    font-size: 11px;
+  }
+  /* Navigation bar left and right */
+  .topnav-left, .topnav-right {
+    float: none;
+    display: block;
+  }
+  /* Logo Car */
+  .logoCar {
+    display: none;
+  }
+}
+
+/* Daca browserul este IE11... */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* Flip card sporturi */
+  .flip-card {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    perspective: 1000px;
+    margin: auto;
+    transform-style: preserve-3d;
+  }
+  /* Flip card hover back*/
+  .flip-card:hover .flip-card-back {
+    transform: rotateY(0deg);
+  }
+  /* Flip card hover front */
+  .flip-card:hover .flip-card-front {
+    transform: rotateY(180deg);
+  }
+  /* Continut flip card */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+  }
+  /* Flip card hover */
+  .flip-card:hover {
+  transform: rotateY(180deg);
+  }
+  /* Flip card fron and back */
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+  }
+  /* Flip card front */
+  .flip-card-front {
+    z-index: 2;
+	  transform: rotateY(0deg);
+    background-color: inherit;
+    color: black;
+  }
+  /* Flip card back */
+  .flip-card-back {
+    transform: rotateY(-180deg);
+    background-color: inherit;
+    color: blue;
+  }
+}
